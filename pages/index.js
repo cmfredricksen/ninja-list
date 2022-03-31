@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Navbar from "../comps/Navbar"
-import Footer from "../comps/Footer"
 import Link from "next/link"
 
 export default function Home() {
   return (
+    <>
+    <Head>
+      <title>Ninja List | Home</title>
+    </Head>
     <div>
 
       <h1 className={styles.title}>Home</h1>
@@ -20,5 +22,6 @@ export default function Home() {
       </div>
 
     </div>
+    </>
   )
 }
